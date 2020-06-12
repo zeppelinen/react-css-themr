@@ -103,7 +103,7 @@ export default (componentName, localTheme, options = {}) => ThemedComponent => {
 
       if (themeNamespace && !theme) {
         throw new Error(
-          'Invalid themeNamespace use in friendsofreactjs/react-css-themr. ' +
+          'Invalid themeNamespace use in react-css-themr. ' +
             'themeNamespace prop should be used only with theme prop.'
         )
       }
@@ -294,7 +294,7 @@ function validateComposeOption(composeTheme) {
     [COMPOSE_DEEPLY, COMPOSE_SOFTLY, DONT_COMPOSE].indexOf(composeTheme) === -1
   ) {
     throw new Error(
-      `Invalid composeTheme option for friendsofreactjs/react-css-themr. Valid composition options\
+      `Invalid composeTheme option for react-css-themr. Valid composition options\
  are ${COMPOSE_DEEPLY}, ${COMPOSE_SOFTLY} and ${DONT_COMPOSE}. The given\
  option was ${composeTheme}`
     )

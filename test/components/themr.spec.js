@@ -399,7 +399,7 @@ describe('Themr decorator function', () => {
         </ProviderMock>
       )
     ).toThrow(
-      /Invalid themeNamespace use in friendsofreactjs\/react-css-themr. themeNamespace prop should be used only with theme prop./
+      /Invalid themeNamespace use in react-css-themr. themeNamespace prop should be used only with theme prop./
     )
   })
 
