@@ -225,6 +225,10 @@ function merge(original = {}, mixin = {}) {
             result[key] = mixinValue
             break
           }
+          case 'number': {
+            // CSS-in-JS themes passed down as props
+            break
+          }
 
           default: {
             //can't merge an object with a non-object
@@ -257,6 +261,12 @@ function merge(original = {}, mixin = {}) {
             result[key] = mixinValue
             break
           }
+
+          case 'number': {
+            // CSS-in-JS themes passed down as props
+            break
+          }
+
           case 'function': {
             //this handles issue when isomorphic-style-loader addes helper functions to css-module
             break //just skip
